@@ -114,153 +114,181 @@
   
 
 </head>
-<body>
-    <div class="bg-alternative border border shadow-md rounded-xl">
-        <div class="p-4">
-            <div class="group-heading">information</div>
-            <div class="flex items-center justify-between">
-              
-    <div>invite</div>
-    <div>• sends sadist's invite</div>
-</div>
+<pre style="color:white">
 
-    <div>botinfo</div>
-    <div>• info about sadist</div>
-          
-    <div>ping</div>
-    <div>• sadist's ping</div>
-  
-    <div>userinfo [user]</div>
-    <div>• view info about a user</div>
-          
-    <div>banner [user]</div>
-    <div>• view a user's banner</div>
-          
-    <div>avatar [user]</div>
-    <div>• view a user's avatar</div>
-          
-    <div>serveravatar [user]</div> 
-    <div>• shows a member's server avatar</div>
-      
-    <div>membercount</div>
-    <div>• shows the member count of the server</div>
-      
-     <div>servericon</div>
-     <div>• shows the server icon</div>
-      
-     <div>serverbanner</div>
-     <div>• shows the server banner</div>
-            </p>
-            <hr class="border-zinc-700">
-        </div>
+    Sadist's Command List:
+    () = needed {} = optional
 
+    Information Commands:
+     > help - returns the help message
+     > ping - check sadist's latency
+     > uptime - check sadist's uptime
+     > botinfo - returns information about sadist
+     > donatorperks - sends donator perks
 
+    Config Commands:
+     > autorole add {role} - give a role to new users that joins your server
+     > autorole remove (role) - remove a role from autorole
+     > prefix {prefix} - set a server prefix
+     > selfprefix {prefix} - set your own prefix
+     > autopfp add {channel} {genre} {type} - adds the autopfp module to a channel
+     > autopfp remove {genre} {type} - removes the autopfp module from a channel
+     > autopfp clear - clears all autopfp modules in a guild
+     > mediaonly add {channel} - add a mediaonly channel to your server
+     > mediaonly remove {channel} - remove a mediaonly channel from your server
+     > mediaonly list - returns a list of mediaonly channels in a server
+     > enablecommand {command} - enable a command for your server 
+     > disablecommand {command} - disable a command for your server
 
-        <div class="p-4">
-            <div class="group-heading">moderation</div>
-            <div class="flex items-center justify-between">
-
-                <div>ban (member)</div>
-                <div>• bans a member from your server</div>
-              
-                <div>kick (member)</div>
-                <div>• kicks a member from your server</div>
-              
-                <div>timeout (member)</div>
-                <div>• timeout a member from your server</div>
-              
-                <div>role (rolenane)</div>
-                <div>• gives a member a role</div>
-              
-                <div>welcome settings</div> 
-                <div>• config menu for the welcome module</div>
-                  
-                <div>lock [channel]</div>
-                <div>• locks a chat in your server</div>
-                  
-                <div>unlock [channel]</div>
-                <div>• unlocks a chat in your server</div>
-                  
-                <div>purge (amount)</div>
-                <div>• clears messages from your server</div>
-             </div>
-            <p class="select-none cursor-pointer mt-2 text-zinc-400 text-sm line-clamp-2">
-
-                
-            </p>
-            <hr class="border-zinc-700">
-        </div>
-
-        <div class="p-4">
-            <div class="group-heading">misc</div>
-            <div class="flex items-center justify-between">
-
-                <div>steal (emojis)</div> 
-                <div>• adds up to 20 emoji from another server to your server</div> 
-
-                <div>enlarge (emoji)
-                <div>• enlarges an emoji</div>
-            </div>
-            <p class="select-none cursor-pointer mt-2 text-zinc-400 text-sm line-clamp-2">
-
-                
-            </p>
-            <hr class="border-zinc-700">
-
-        <div class="p-4">
-            <div class="group-heading">Last.FM</div>
-            <div class="flex items-center justify-between">
-
-                <div> lastfm set (username)</div> 
-                <div>• sets your LastFM username</div>
-
-                <div> fm</div>
-                <div>• shows your last played song</div>
-
-                <div> np</div>
-                <div>• shows your currently playing song</div>
-
-                <div> lf plays</div>
-                <div>• play amount for your current artist</div>
-            </div>
-            <p class="select-none cursor-pointer mt-2 text-zinc-400 text-sm line-clamp-2">
-
-                
-            </p>
-            <hr class="border-zinc-700">
-        </div>
-          
-        <div class="p-4">
-            <div class="group-heading">Fun</div>
-            <div class="flex items-center justify-between">
+    Antinuke Commands:
+     > antinuke logs (channel) - configure the logs antinuke channel
+     > antinuke enable - enable antinuke in your server
+     > antinuke disable - disable antinuke in your server
+     > antinuke admin add {member} - add an antinuke admin
+     > antinuke admin remove {member} - remove an antinuke admin
+     > antinuke admin list - returns antinuke admins
+     > antinuke settings - check antinuke settings
+     > antinuke channel enable {punishment} - enable anti channel delete protection
+     > antinuke channel disable - disable anti channel delete protection
+     > antinuke channel threshold {number} - change the number of allowed channel deletions per 1 minute
+     > antinuke kick enable {punishment} - enable kick members protection
+     > antinuke kick disable - disable kick protection
+     > antinuke kick threshold {number} - change the number of allowed kicks per 1 minute
+     > antinuke ban enable {punishment} - enable ban members protection
+     > antinuke ban disable - disable ban protection
+     > antinuke ban threshold {number} - change the number of allowed bans per one minute
+     > antinuke botadd whitelist {member} - whitelist a bot so it can join the server 
+     > antinuke botadd unwhitelist {member} - remove an antibot whitelisted member
+     > antinuke botadd whitelisted - returns whitelisted bots
+     > antinuke botadd enable {punishment} - enable bot adding protection
+     > antinuke botadd disable - disable bot adding protection
 
 
+    Moderation Commands:
+     > unsetme - disable the jail features in your server
+     > setme - enable the jail features in your server
+     > nuke - clone a channel
+     > ban {user} (reason) - ban a member from your server
+     > unban {user} (reason) - unban an user from your server
+     > bans - returns a list of banned members
+     > kick {member} (reason) - kick a member from your server
+     > softban {member} (reason) - ban an user then immediately unban them
+     > mute {member} (time) (reason) - mute members in your server
+     > unmute {member} (reason) - unmute a member in your server
+     > muted - returns a list of muted members
+     > purge {amount} (member) - bulk delete messages
+     > botpurge {amount} - bulk delete messages sent by bots
+     > jail {member} (reason) - jail a member
+     > unjail {member} (reason) - unjail a member
+     > slowmode {seconds} (channel) - add slowmode to a channel
+     > lock (channel) - lock a channel
+     > unlock (channel) - unlocks a channel
+     > hide (channel) - hides a channel
+     > reveal (channel) - reveals a channel
+     > roleall add {role} - add a role to all members in this server
+     > roleall remove {role} - remove a role from all members in this server
+     > nickname (name) - set a users nickname l
+     > warn add {member} (reason) - warns a member
+     > warn remove {member} (reason) - removes a warn from a member 
+     > warn list {member} - see all of a members warnings 
 
-                <div> roblox [username]</div>
-                <div>• get info on a roblox account</div>
-              
-                <div> 8ball</div>
-                <div>• ask the magic 8ball a question</div>
+    Utility Commands:
+     > getbotinvite {bot} - returns the url to invite the givin bot
+     > inviteinfo {code} - returns information about an invite
+     > serverinfo - returns information about the server
+     > roleinfo {role} - returns role information
+     > seen {user} - retrusn when an user was last seen
+     > clearsnipes - clear the snipes in the server
+     > snipe (number) - check the latest deleted message from a channel
+     > editsnipe - see the recently edited message in a channel
+     > afk (reason) - let people know your away
+     > uwuify {message} - uwuify a message
+     > clearnames - delete your name history
+     > usernames - {user} - see the old names for a user
+     > boosters - see all server boosters
+     > boosters lost - returns all boosters lost
+     > avatar (user) - see an user avatar
+     > banner (user) - see an user banner
+     > membercount - returns how many members your guild has
+     > roles - see a list of server roles
+     > bots - see a list of the bots in your server
+     > userinfo (user) - returns users information
+     > spotify (user) - returns what an user is listening on spotify
+     > inrole {role} - returns a list of users that have the certain role
+     > invites {member} - returns how many invites a person has
+     > github {username} - returns info on a users github
+     > translate {lang} {message} - translates message to language of your choosing
+     > sicon - returns server icon
+     > sbanner - returns servers banner 
+     > ssplash - returns a server splash 
+     > blacktea - starts a blacktea game
 
-                <div> howcute</div>
-                <div>• cute rate</div>
 
-                <div> cat</div>
-                <div>• random cat picture</div>
+    Chat Commands:
+     > autoresponder add {trigger}, {responce} - add an autoresponder
+     > autoresponder remove {trigger} - remove an autoresponder
+     > autoresponder variables - returns variables for autoresponder
+     > autoresponder list - returns a list of all autoresponders
+     > autoreact add {trigger}, {emojis} - make the bot react with emojis on your message
+     > autoreact remove {trigger} - remove auto reactions from a content
+     > autoreact list - return a list of autoreactions in this server
 
-                <div> ship [member] [member]</div>
-                <div>• ship 2 members</div>
+    Booster Commands:
+     > boosterrole setup - set the boosterrole module
+     > boosterrole remove - unset the boosterrole module
+     > boosterrole base {role} - set a base role for boosterrole module
+     > boosterrole create (name) - create a booster role
+     > boosterrole name {name} - edit the booster role name
+     > boosterrole icon {emoji} - edit the role icon
+     > boosterrole color {color} - change the booster role color
+     > boosterrole hoist - edit the role hoist
+     > boosterrole position (pos) - change the role position
+     > boosterrole delete - delete the booster role
+     > boosterrole edit - edit a booster role
 
-                <div> anime [name]</div>
-                <div>• search for an anime</div>
-            </div>
-            <p class="select-none cursor-pointer mt-2 text-zinc-400 text-sm line-clamp-2">
+    Greeting Commands:
+     > welcome variables - return the variables for the welcome message
+     > welcome config - returns stats of the welcome message
+     > welcome channel (channel) - configure the welcome channel
+     > welcome message {message} - configure the welcome message
+     > welcome delete - delete the welcome module
+     > welcome test - test welcome module
 
-                
-            </p>
-            <hr class="border-zinc-700">
-        </div>
-            </div>
-        
+    Joindm Commands:
+     > joindm message {message} - set a joindm message
+     > joindm remove - remove the joindm message
+     > joindm test - test the joindm message
+
+    Voicemaster Commands:
+     > voicemaster setup - sets up the voice master for your server  
+     > voicemaster remove - removes the voice master for your server
+     > voicemaster interface - get a updated version of the voicemaster interface
+     > voice lock - lock the voice channel
+     > voice unlock - unlock the voice channel
+     > voice rename {name} - renames the voice channel
+     > voice hide - hides the voice channel
+     > voice reveal - reveals the voice channel
+
+    Reactionrole Commands:
+     > reactionrole add {messageid} {channel} {emoji} {role} - add a reactionrole to a message
+     > reactionrole remove {messageid} {channel} {emoji}  - remove a reactionrole from a message
+     > reactionrole list - returns all the reaction roles from the server
+
+
+    Emoji Commands:
+     > emoji add {emoji} (name) - add a emoji to your guild
+     > emoji delete {emoji} - remove a emoji from your guild
+     > emoji addmulti {emojis} - add multiple emojis to your guild
+     > emoji list - returns a list of emojis in a guild
+     > emoji enlarge {emoji} - sends the emoji in a bigger picture
+     > emoji info {emoji} - returns info on a certain emoji
+     > sticker steal {sticker} - steals the sticker and adds it to your guild
+     > sticker delete {sticker} - removes sticker from your guild
+     > sticker enlarge {sticker} - sends the sticker in a bigger picture 
+
+
+
+</pre>
 </body>
-</head>
+
+</html>
